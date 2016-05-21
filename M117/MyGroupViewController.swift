@@ -8,9 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MyGroupViewController: UIViewController {
     
-
-
+    
+    
 }
 

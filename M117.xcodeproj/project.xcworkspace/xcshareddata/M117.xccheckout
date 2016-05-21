@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>10484AD6-80A5-4D4C-918C-1B1071530FC5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>24B1F44EBE43B55CFBE6E946F461D61929FFB527</key>
+		<string>https://github.com/rohanneilkapoor/M117.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>M117.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>24B1F44EBE43B55CFBE6E946F461D61929FFB527</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rohanneilkapoor/M117.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>24B1F44EBE43B55CFBE6E946F461D61929FFB527</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>24B1F44EBE43B55CFBE6E946F461D61929FFB527</string>
+			<key>IDESourceControlWCCName</key>
+			<string>M117</string>
+		</dict>
+	</array>
+</dict>
+</plist>

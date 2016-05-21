@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FindFriendsViewController: UITableViewController {
     
-
-
+    
+    
+    
 }
 

@@ -13,6 +13,8 @@
 		FBC1B8E71CF10BCD00BFA3B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC1B8E61CF10BCD00BFA3B5 /* Images.xcassets */; };
 		FBC1B8EA1CF10BCD00BFA3B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBC1B8E81CF10BCD00BFA3B5 /* LaunchScreen.xib */; };
 		FBC1B8F61CF10BCE00BFA3B5 /* M117Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1B8F51CF10BCE00BFA3B5 /* M117Tests.swift */; };
+		FBC1B9001CF10E8E00BFA3B5 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1B8FF1CF10E8E00BFA3B5 /* FindFriendsViewController.swift */; };
+		FBC1B9021CF1157800BFA3B5 /* MyGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC1B9011CF1157800BFA3B5 /* MyGroupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		FBC1B8EF1CF10BCE00BFA3B5 /* M117Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M117Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC1B8F41CF10BCE00BFA3B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBC1B8F51CF10BCE00BFA3B5 /* M117Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M117Tests.swift; sourceTree = "<group>"; };
+		FBC1B8FF1CF10E8E00BFA3B5 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		FBC1B9011CF1157800BFA3B5 /* MyGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				FBC1B8DF1CF10BCD00BFA3B5 /* AppDelegate.swift */,
 				FBC1B8E11CF10BCD00BFA3B5 /* ViewController.swift */,
 				FBC1B8E31CF10BCD00BFA3B5 /* Main.storyboard */,
+				FBC1B9011CF1157800BFA3B5 /* MyGroupViewController.swift */,
+				FBC1B8FF1CF10E8E00BFA3B5 /* FindFriendsViewController.swift */,
 				FBC1B8E61CF10BCD00BFA3B5 /* Images.xcassets */,
 				FBC1B8E81CF10BCD00BFA3B5 /* LaunchScreen.xib */,
 				FBC1B8DD1CF10BCD00BFA3B5 /* Supporting Files */,
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC1B9021CF1157800BFA3B5 /* MyGroupViewController.swift in Sources */,
 				FBC1B8E21CF10BCD00BFA3B5 /* ViewController.swift in Sources */,
 				FBC1B8E01CF10BCD00BFA3B5 /* AppDelegate.swift in Sources */,
+				FBC1B9001CF10E8E00BFA3B5 /* FindFriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
