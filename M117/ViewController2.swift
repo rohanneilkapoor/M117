@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MultipeerConnectivity
 
 class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSource, MPCManagerDelegate {
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
@@ -103,6 +104,33 @@ class ViewController2: UIViewController, UITableViewDelegate, UITableViewDataSou
         
         appDelegate.mpcManager.browser.invitePeer(selectedPeer, toSession: appDelegate.mpcManager.session, withContext: nil, timeout: 20)
     }
+    
+    func invitationWasReceived(fromPeer: String) {
+        let alert = UIAlertController(title: "", message: "\(fromPeer) wants to chat with you.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let acceptAction: UIAlertAction = UIAlertAction(title: "Accept", style: UIAlertActionStyle.Default) { (alertAction) -> Void in
+            self.appDelegate.mpcManager.invitationHandler(true, self.appDelegate.mpcManager.session)
+        }
+        
+        let declineAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) { (alertAction) -> Void in
+            self.appDelegate.mpcManager.invitationHandler(false, self.appDelegate.mpcManager.session)
+        }
+        
+        alert.addAction(acceptAction)
+        alert.addAction(declineAction)
+        
+        NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+    }
+    
+
+    func connectedWithPeer(peerID: MCPeerID) {
+        NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
+            self.performSegueWithIdentifier("idSegueChat", sender: self)
+    }
+    }
+    
     
     
     /*

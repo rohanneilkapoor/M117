@@ -24,7 +24,7 @@ class MPCManager: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     var advertiser: MCNearbyServiceAdvertiser!
     
     var foundPeers = [MCPeerID]()
-    var invitationHandler: ((Bool, MCSession!) -> Void)!
+    var invitationHandler: ((Bool, MCSession) -> Void)!
     
     var delegate: MPCManagerDelegate?
     
@@ -63,4 +63,51 @@ class MPCManager: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     func browser(browser: MCNearbyServiceBrowser, didNotStartBrowsingForPeers error: NSError) {
         print(error.localizedDescription)
     }
+    
+    
+    func advertiser(advertiser: MCNearbyServiceAdvertiser, didReceiveInvitationFromPeer peerID: MCPeerID, withContext context: NSData?, invitationHandler: (Bool, MCSession) -> Void) {
+        self.invitationHandler = invitationHandler
+        delegate?.invitationWasReceived(peerID.displayName)
+    }
+    
+    func advertiser(advertiser: MCNearbyServiceAdvertiser, didNotStartAdvertisingPeer error: NSError) {
+        print(error.localizedDescription)
+    }
+    
+    func session(session: MCSession, peer peerID: MCPeerID, didChangeState state: MCSessionState) {
+        switch state{
+        case MCSessionState.Connected:
+            print("Connected to session: \(session)")
+            delegate?.connectedWithPeer(peerID)
+            
+        case MCSessionState.Connecting:
+            print("Connecting to session: \(session)")
+            
+        default:
+            print("Did not connect to session: \(session)")
+        }
+    }
+    
+    
+    func sendData(dictionaryWithData dictionary: Dictionary<String, String>, toPeer targetPeer: MCPeerID) -> Bool {
+        return true
+    }
+    
+    func session(session: MCSession, didReceiveData data: NSData, fromPeer peerID: MCPeerID) {
+        let dictionary: [String: AnyObject] = ["data": data, "fromPeer": peerID]
+        NSNotificationCenter.defaultCenter().postNotificationName("receivedMPCDataNotification", object: dictionary)
+    }
+    
+    func session(session: MCSession, didReceiveStream stream: NSInputStream, withName streamName: String, fromPeer peerID: MCPeerID) {
+        
+    }
+
+    func session(session: MCSession, didStartReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, withProgress progress: NSProgress) {
+    
+    }
+    func session(session: MCSession, didFinishReceivingResourceWithName resourceName: String, fromPeer peerID: MCPeerID, atURL localURL: NSURL, withError error: NSError?) {
+    
+    }
+    
+    
 }
