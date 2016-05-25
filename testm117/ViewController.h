@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 @import MultipeerConnectivity;
 #import "AppDelegate.h"
+@import AVKit;
+@import AVFoundation;
+@import MediaPlayer;
+
 @interface ViewController : UIViewController <MCBrowserViewControllerDelegate>
 
 @property (strong, nonatomic) AppDelegate *delegate;

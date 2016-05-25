@@ -16,6 +16,8 @@
 		9E6630171CF3CBE2006D0EC8 /* testm117Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630161CF3CBE2006D0EC8 /* testm117Tests.m */; };
 		9E6630221CF3CBE2006D0EC8 /* testm117UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630211CF3CBE2006D0EC8 /* testm117UITests.m */; };
 		9E6630341CF4FBC3006D0EC8 /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630331CF4FBC3006D0EC8 /* MPCHandler.m */; };
+		9E6630511CF55BAA006D0EC8 /* InputGroupNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */; };
+		9E6630531CF57463006D0EC8 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9E6630521CF570B4006D0EC8 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		9E6630231CF3CBE2006D0EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E6630321CF4FBC3006D0EC8 /* MPCHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCHandler.h; sourceTree = "<group>"; };
 		9E6630331CF4FBC3006D0EC8 /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
+		9E66304F1CF55BAA006D0EC8 /* InputGroupNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputGroupNameViewController.h; sourceTree = "<group>"; };
+		9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputGroupNameViewController.m; sourceTree = "<group>"; };
+		9E6630521CF570B4006D0EC8 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +114,11 @@
 				9E662FFF1CF3CBE2006D0EC8 /* AppDelegate.h */,
 				9E6630001CF3CBE2006D0EC8 /* AppDelegate.m */,
 				9E6630021CF3CBE2006D0EC8 /* ViewController.h */,
+				9E6630521CF570B4006D0EC8 /* video.mp4 */,
 				9E6630031CF3CBE2006D0EC8 /* ViewController.m */,
 				9E6630051CF3CBE2006D0EC8 /* Main.storyboard */,
+				9E66304F1CF55BAA006D0EC8 /* InputGroupNameViewController.h */,
+				9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */,
 				9E6630081CF3CBE2006D0EC8 /* Assets.xcassets */,
 				9E66300A1CF3CBE2006D0EC8 /* LaunchScreen.storyboard */,
 				9E66300D1CF3CBE2006D0EC8 /* Info.plist */,
@@ -251,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6630531CF57463006D0EC8 /* video.mp4 in Resources */,
 				9E66300C1CF3CBE2006D0EC8 /* LaunchScreen.storyboard in Resources */,
 				9E6630091CF3CBE2006D0EC8 /* Assets.xcassets in Resources */,
 				9E6630071CF3CBE2006D0EC8 /* Main.storyboard in Resources */,
@@ -278,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6630511CF55BAA006D0EC8 /* InputGroupNameViewController.m in Sources */,
 				9E6630041CF3CBE2006D0EC8 /* ViewController.m in Sources */,
 				9E6630341CF4FBC3006D0EC8 /* MPCHandler.m in Sources */,
 				9E6630011CF3CBE2006D0EC8 /* AppDelegate.m in Sources */,

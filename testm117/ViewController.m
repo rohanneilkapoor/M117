@@ -12,7 +12,11 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    NSURL *videoURL;
+    AVPlayer *player;
+    MPMoviePlayerController *moviePlayer;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,11 +26,55 @@
     [self.delegate.mpcHandler setupPeerWithDisplayName:[UIDevice currentDevice].name];
     [self.delegate.mpcHandler setupSession];
     [self.delegate.mpcHandler advertiseSelf:YES];
+    
+//    NSString *moviePath = [[NSBundle mainBundle] pathForResource:@"video" ofType:@"mp4"];
+//    videoURL = [[NSURL alloc] initFileURLWithPath:moviePath];
+//    player = [[AVPlayer alloc] initWithURL:videoURL];
+//    [player setActionAtItemEnd:AVPlayerActionAtItemEndNone];
+//    [player setMuted:YES];
+//    AVPlayerLayer *playerLayer = [[AVPlayerLayer alloc] initWithLayer:player];
+//    [playerLayer setVideoGravity:AVLayerVideoGravityResizeAspectFill];
+//    [playerLayer setZPosition:-1];
+//    [playerLayer setFrame:self.view.frame];
+//    [self.view.layer addSublayer:playerLayer];
+//    [player play];
+//    
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loopVideo) name:AVPlayerItemDidPlayToEndTimeNotification object:nil];
+//    
+//    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"video" withExtension:@"mov"];
+    
+    
+    
+    // Create and configure the movie player.
+    NSURL *videoURL = [[NSBundle mainBundle] URLForResource:@"video" withExtension:@"mp4"];
+    
+    // Create and configure the movie player.
+    moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+    
+    moviePlayer.controlStyle = MPMovieControlStyleNone;
+    moviePlayer.scalingMode = MPMovieScalingModeAspectFill;
+    
+    moviePlayer.view.frame = self.view.frame;
+    
+    [self.view insertSubview:moviePlayer.view atIndex:0];
+    
+    [moviePlayer play];
+    
+    // Loop video.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loopVideo) name:MPMoviePlayerPlaybackDidFinishNotification object:moviePlayer];
+
+ 
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)loopVideo {
+    [player seekToTime:kCMTimeZero];
+    [player play];
 }
 - (IBAction)m117:(id)sender {
     
