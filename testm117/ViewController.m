@@ -58,13 +58,30 @@
     
     [self.view insertSubview:moviePlayer.view atIndex:0];
     
+   // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loopVideo) name:MPMoviePlayerPlaybackDidFinishNotification object:moviePlayer];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(moviePlayBackDidFinishedFromSetUnderway:) name:MPMoviePlayerPlaybackStateDidChangeNotification object:moviePlayer];
+    
+
+    
     [moviePlayer play];
     
     // Loop video.
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loopVideo) name:MPMoviePlayerPlaybackDidFinishNotification object:moviePlayer];
 
  
     
+}
+
+-(void)moviePlayBackDidFinishedFromSetUnderway:(NSNotification *)dict{
+    
+    if (dict.object == moviePlayer) {
+        NSInteger reason = [[dict.userInfo objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey] integerValue];
+        if (reason == MPMovieFinishReasonPlaybackEnded)
+        {
+            [moviePlayer prepareToPlay];
+            [moviePlayer play];
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning {
