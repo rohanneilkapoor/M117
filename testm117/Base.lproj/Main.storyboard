@@ -3,7 +3,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Montserrat-Regular.otf">
+            <string>Montserrat-Regular</string>
+        </mutableArray>
+        <mutableArray key="Montserrat-SemiBold.otf">
+            <string>Montserrat-SemiBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,16 +26,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sQ-51-apf">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="m117"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="183" y="359" width="35" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="m117:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hta-k6-ulF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IX-nG-cAq">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="bypass"/>
@@ -37,24 +36,95 @@
                                     <segue destination="FVS-h6-r3g" kind="presentation" modalTransitionStyle="crossDissolve" id="yLm-2I-6br"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clique" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OH-cH-RuI">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sQ-51-apf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.34509803921568627" green="0.54509803921568623" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="wTr-yR-FIy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
+                                <state key="normal" title="Form Clique">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="wTr-yR-FIy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="wTr-yR-FIy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="m117:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hta-k6-ulF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="7OH-cH-RuI" secondAttribute="trailing" id="DUf-tq-dpJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7sQ-51-apf" secondAttribute="bottom" id="N8j-d0-Oof"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7OH-cH-RuI" secondAttribute="leading" id="P15-Bd-Cma"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7sQ-51-apf" secondAttribute="bottom" constant="10" id="SCW-MK-seX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="7sQ-51-apf" secondAttribute="trailing" constant="-20" id="XgA-UM-qwy"/>
+                            <constraint firstItem="7OH-cH-RuI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cEL-aL-uhp"/>
+                            <constraint firstItem="7OH-cH-RuI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="drB-7b-POM"/>
+                            <constraint firstItem="7sQ-51-apf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="fCW-07-YQ3"/>
+                            <constraint firstItem="7OH-cH-RuI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nLs-PK-cZQ"/>
+                            <constraint firstItem="7OH-cH-RuI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x5u-RJ-iSS"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="7sQ-51-apf"/>
                                 <exclude reference="4IX-nG-cAq"/>
+                                <exclude reference="7OH-cH-RuI"/>
+                                <exclude reference="7sQ-51-apf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="DUf-tq-dpJ"/>
+                                <exclude reference="P15-Bd-Cma"/>
+                                <exclude reference="cEL-aL-uhp"/>
+                                <exclude reference="drB-7b-POM"/>
+                                <exclude reference="nLs-PK-cZQ"/>
+                                <exclude reference="x5u-RJ-iSS"/>
+                                <exclude reference="XgA-UM-qwy"/>
+                                <exclude reference="fCW-07-YQ3"/>
+                                <exclude reference="N8j-d0-Oof"/>
+                                <exclude reference="SCW-MK-seX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="7sQ-51-apf"/>
                                 <include reference="4IX-nG-cAq"/>
+                                <include reference="7OH-cH-RuI"/>
+                                <include reference="7sQ-51-apf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="DUf-tq-dpJ"/>
+                                <include reference="P15-Bd-Cma"/>
+                                <exclude reference="cEL-aL-uhp"/>
+                                <include reference="drB-7b-POM"/>
+                                <exclude reference="nLs-PK-cZQ"/>
+                                <include reference="x5u-RJ-iSS"/>
+                                <include reference="XgA-UM-qwy"/>
+                                <include reference="fCW-07-YQ3"/>
+                                <exclude reference="N8j-d0-Oof"/>
+                                <include reference="SCW-MK-seX"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="279" y="326.25"/>
         </scene>
         <!--Input Group Name View Controller-->
         <scene sceneID="LZV-rp-my8">

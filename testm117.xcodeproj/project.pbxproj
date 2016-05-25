@@ -18,6 +18,30 @@
 		9E6630341CF4FBC3006D0EC8 /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630331CF4FBC3006D0EC8 /* MPCHandler.m */; };
 		9E6630511CF55BAA006D0EC8 /* InputGroupNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */; };
 		FB9007501CF578BA00F27A94 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FB90074F1CF578BA00F27A94 /* video.mp4 */; };
+		FB90076B1CF586F200F27A94 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007631CF586F200F27A94 /* Montserrat-Black.otf */; };
+		FB90076C1CF586F200F27A94 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007631CF586F200F27A94 /* Montserrat-Black.otf */; };
+		FB90076D1CF586F200F27A94 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007631CF586F200F27A94 /* Montserrat-Black.otf */; };
+		FB90076E1CF586F200F27A94 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007641CF586F200F27A94 /* Montserrat-Bold.otf */; };
+		FB90076F1CF586F200F27A94 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007641CF586F200F27A94 /* Montserrat-Bold.otf */; };
+		FB9007701CF586F200F27A94 /* Montserrat-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007641CF586F200F27A94 /* Montserrat-Bold.otf */; };
+		FB9007711CF586F200F27A94 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007651CF586F200F27A94 /* Montserrat-ExtraBold.otf */; };
+		FB9007721CF586F200F27A94 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007651CF586F200F27A94 /* Montserrat-ExtraBold.otf */; };
+		FB9007731CF586F200F27A94 /* Montserrat-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007651CF586F200F27A94 /* Montserrat-ExtraBold.otf */; };
+		FB9007741CF586F200F27A94 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007661CF586F200F27A94 /* Montserrat-Hairline.otf */; };
+		FB9007751CF586F200F27A94 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007661CF586F200F27A94 /* Montserrat-Hairline.otf */; };
+		FB9007761CF586F200F27A94 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007661CF586F200F27A94 /* Montserrat-Hairline.otf */; };
+		FB9007771CF586F200F27A94 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007671CF586F200F27A94 /* Montserrat-Light.otf */; };
+		FB9007781CF586F200F27A94 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007671CF586F200F27A94 /* Montserrat-Light.otf */; };
+		FB9007791CF586F200F27A94 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007671CF586F200F27A94 /* Montserrat-Light.otf */; };
+		FB90077A1CF586F200F27A94 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007681CF586F200F27A94 /* Montserrat-Regular.otf */; };
+		FB90077B1CF586F200F27A94 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007681CF586F200F27A94 /* Montserrat-Regular.otf */; };
+		FB90077C1CF586F200F27A94 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007681CF586F200F27A94 /* Montserrat-Regular.otf */; };
+		FB90077D1CF586F200F27A94 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007691CF586F200F27A94 /* Montserrat-SemiBold.otf */; };
+		FB90077E1CF586F200F27A94 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007691CF586F200F27A94 /* Montserrat-SemiBold.otf */; };
+		FB90077F1CF586F200F27A94 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007691CF586F200F27A94 /* Montserrat-SemiBold.otf */; };
+		FB9007801CF586F200F27A94 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB90076A1CF586F200F27A94 /* Montserrat-UltraLight.otf */; };
+		FB9007811CF586F200F27A94 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB90076A1CF586F200F27A94 /* Montserrat-UltraLight.otf */; };
+		FB9007821CF586F200F27A94 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB90076A1CF586F200F27A94 /* Montserrat-UltraLight.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +83,14 @@
 		9E66304F1CF55BAA006D0EC8 /* InputGroupNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputGroupNameViewController.h; sourceTree = "<group>"; };
 		9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputGroupNameViewController.m; sourceTree = "<group>"; };
 		FB90074F1CF578BA00F27A94 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = ../../../../Desktop/video.mp4; sourceTree = "<group>"; };
+		FB9007631CF586F200F27A94 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.otf"; path = "../../../../Desktop/montserrat/Montserrat-Black.otf"; sourceTree = "<group>"; };
+		FB9007641CF586F200F27A94 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Bold.otf"; path = "../../../../Desktop/montserrat/Montserrat-Bold.otf"; sourceTree = "<group>"; };
+		FB9007651CF586F200F27A94 /* Montserrat-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ExtraBold.otf"; path = "../../../../Desktop/montserrat/Montserrat-ExtraBold.otf"; sourceTree = "<group>"; };
+		FB9007661CF586F200F27A94 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Hairline.otf"; path = "../../../../Desktop/montserrat/Montserrat-Hairline.otf"; sourceTree = "<group>"; };
+		FB9007671CF586F200F27A94 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.otf"; path = "../../../../Desktop/montserrat/Montserrat-Light.otf"; sourceTree = "<group>"; };
+		FB9007681CF586F200F27A94 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Regular.otf"; path = "../../../../Desktop/montserrat/Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		FB9007691CF586F200F27A94 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-SemiBold.otf"; path = "../../../../Desktop/montserrat/Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
+		FB90076A1CF586F200F27A94 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-UltraLight.otf"; path = "../../../../Desktop/montserrat/Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +149,14 @@
 				FB90074F1CF578BA00F27A94 /* video.mp4 */,
 				9E6630031CF3CBE2006D0EC8 /* ViewController.m */,
 				9E6630051CF3CBE2006D0EC8 /* Main.storyboard */,
+				FB9007631CF586F200F27A94 /* Montserrat-Black.otf */,
+				FB9007641CF586F200F27A94 /* Montserrat-Bold.otf */,
+				FB9007651CF586F200F27A94 /* Montserrat-ExtraBold.otf */,
+				FB9007661CF586F200F27A94 /* Montserrat-Hairline.otf */,
+				FB9007671CF586F200F27A94 /* Montserrat-Light.otf */,
+				FB9007681CF586F200F27A94 /* Montserrat-Regular.otf */,
+				FB9007691CF586F200F27A94 /* Montserrat-SemiBold.otf */,
+				FB90076A1CF586F200F27A94 /* Montserrat-UltraLight.otf */,
 				9E66304F1CF55BAA006D0EC8 /* InputGroupNameViewController.h */,
 				9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */,
 				9E6630081CF3CBE2006D0EC8 /* Assets.xcassets */,
@@ -259,10 +299,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9007711CF586F200F27A94 /* Montserrat-ExtraBold.otf in Resources */,
 				9E66300C1CF3CBE2006D0EC8 /* LaunchScreen.storyboard in Resources */,
+				FB90076B1CF586F200F27A94 /* Montserrat-Black.otf in Resources */,
+				FB90077A1CF586F200F27A94 /* Montserrat-Regular.otf in Resources */,
+				FB9007801CF586F200F27A94 /* Montserrat-UltraLight.otf in Resources */,
 				9E6630091CF3CBE2006D0EC8 /* Assets.xcassets in Resources */,
 				9E6630071CF3CBE2006D0EC8 /* Main.storyboard in Resources */,
 				FB9007501CF578BA00F27A94 /* video.mp4 in Resources */,
+				FB90077D1CF586F200F27A94 /* Montserrat-SemiBold.otf in Resources */,
+				FB9007741CF586F200F27A94 /* Montserrat-Hairline.otf in Resources */,
+				FB90076E1CF586F200F27A94 /* Montserrat-Bold.otf in Resources */,
+				FB9007771CF586F200F27A94 /* Montserrat-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +318,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9007781CF586F200F27A94 /* Montserrat-Light.otf in Resources */,
+				FB90077E1CF586F200F27A94 /* Montserrat-SemiBold.otf in Resources */,
+				FB9007721CF586F200F27A94 /* Montserrat-ExtraBold.otf in Resources */,
+				FB90076C1CF586F200F27A94 /* Montserrat-Black.otf in Resources */,
+				FB9007811CF586F200F27A94 /* Montserrat-UltraLight.otf in Resources */,
+				FB9007751CF586F200F27A94 /* Montserrat-Hairline.otf in Resources */,
+				FB90076F1CF586F200F27A94 /* Montserrat-Bold.otf in Resources */,
+				FB90077B1CF586F200F27A94 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +333,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9007791CF586F200F27A94 /* Montserrat-Light.otf in Resources */,
+				FB90077F1CF586F200F27A94 /* Montserrat-SemiBold.otf in Resources */,
+				FB9007731CF586F200F27A94 /* Montserrat-ExtraBold.otf in Resources */,
+				FB90076D1CF586F200F27A94 /* Montserrat-Black.otf in Resources */,
+				FB9007821CF586F200F27A94 /* Montserrat-UltraLight.otf in Resources */,
+				FB9007761CF586F200F27A94 /* Montserrat-Hairline.otf in Resources */,
+				FB9007701CF586F200F27A94 /* Montserrat-Bold.otf in Resources */,
+				FB90077C1CF586F200F27A94 /* Montserrat-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
