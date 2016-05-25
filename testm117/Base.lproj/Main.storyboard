@@ -8,6 +8,7 @@
     <customFonts key="customFonts">
         <mutableArray key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="Montserrat-SemiBold.otf">
             <string>Montserrat-SemiBold</string>
@@ -138,11 +139,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-Hm-wXL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Clique Name" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-Hm-wXL">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                     <rect key="frame" x="45" y="170" width="310" height="30"/>
                                 </variation>
                             </textField>
@@ -164,11 +165,23 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8iX-Hm-wXL" firstAttribute="leading" secondItem="wgW-bM-NFv" secondAttribute="leadingMargin" constant="25" id="3h2-Bx-814"/>
+                            <constraint firstItem="8iX-Hm-wXL" firstAttribute="top" secondItem="BXv-Z0-SsY" secondAttribute="bottom" constant="150" id="e5B-O8-xSV"/>
+                            <constraint firstItem="8iX-Hm-wXL" firstAttribute="centerX" secondItem="wgW-bM-NFv" secondAttribute="centerX" id="uqs-ae-KAr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8iX-Hm-wXL" secondAttribute="trailing" constant="25" id="xAw-QZ-hjC"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="8iX-Hm-wXL"/>
                                 <exclude reference="yAD-Bx-XkU"/>
                                 <exclude reference="EBZ-W7-aJ3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3h2-Bx-814"/>
+                                <exclude reference="e5B-O8-xSV"/>
+                                <exclude reference="uqs-ae-KAr"/>
+                                <exclude reference="xAw-QZ-hjC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -176,6 +189,12 @@
                                 <include reference="8iX-Hm-wXL"/>
                                 <include reference="yAD-Bx-XkU"/>
                                 <include reference="EBZ-W7-aJ3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3h2-Bx-814"/>
+                                <include reference="e5B-O8-xSV"/>
+                                <include reference="uqs-ae-KAr"/>
+                                <include reference="xAw-QZ-hjC"/>
                             </mask>
                         </variation>
                     </view>

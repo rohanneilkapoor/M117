@@ -23,11 +23,33 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.textField.delegate = self;
+    
+    
+    UIView *spacerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    [self.textField setLeftViewMode:UITextFieldViewModeAlways];
+    [self.textField setLeftView:spacerView];
+    
+    
+    
+    
     manager = [[CLLocationManager alloc] init];
     geocoder = [[CLGeocoder alloc] init];
     [self getCurrentLocation];
     [self.createGroupButton setHidden:YES];
 }
+
+- (void)viewDidLayoutSubviews{
+    CALayer *border = [CALayer layer];
+    CGFloat borderWidth = 2;
+    border.borderColor = [UIColor darkGrayColor].CGColor;
+    border.frame = CGRectMake(0, self.textField.frame.size.height - borderWidth, self.textField.frame.size.width, self.textField.frame.size.height);
+    border.borderWidth = borderWidth;
+    [self.textField.layer addSublayer:border];
+    self.textField.layer.masksToBounds = YES;
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
