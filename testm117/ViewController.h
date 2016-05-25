@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 @import MultipeerConnectivity;
 #import "AppDelegate.h"
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MCBrowserViewControllerDelegate>
 
-
+@property (strong, nonatomic) AppDelegate *delegate;
+@property (strong, nonatomic) MCBrowserViewController *browser; 
 @end
 

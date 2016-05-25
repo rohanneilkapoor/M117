@@ -20,18 +20,21 @@ NSString *const kServiceType = @"m117";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [self startAdvertising];
+   // [self startAdvertising];
+    
+    self.mpcHandler = [[MPCHandler alloc] init];
+
     return YES;
 }
 
-- (void) startAdvertising {
-    NSString *deviceName = [[UIDevice currentDevice] name];
-    MCPeerID *peerID = [[MCPeerID alloc] initWithDisplayName:deviceName];
-    self.session = [[MCSession alloc] initWithPeer:peerID];
-    self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:kServiceType discoveryInfo:nil session:self.session];
-    
-    [self.advertiser start];
-}
+//- (void) startAdvertising {
+//    NSString *deviceName = [[UIDevice currentDevice] name];
+//    MCPeerID *peerID = [[MCPeerID alloc] initWithDisplayName:deviceName];
+//    self.session = [[MCSession alloc] initWithPeer:peerID];
+//    self.advertiser = [[MCAdvertiserAssistant alloc] initWithServiceType:kServiceType discoveryInfo:nil session:self.session];
+//    
+//    [self.advertiser start];
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
