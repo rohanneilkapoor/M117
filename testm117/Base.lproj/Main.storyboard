@@ -9,6 +9,7 @@
         <mutableArray key="Montserrat-Regular.otf">
             <string>Montserrat-Regular</string>
             <string>Montserrat-Regular</string>
+            <string>Montserrat-Regular</string>
         </mutableArray>
         <mutableArray key="Montserrat-SemiBold.otf">
             <string>Montserrat-SemiBold</string>
@@ -139,42 +140,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Clique Name" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-Hm-wXL">
-                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="45" y="170" width="310" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAD-Bx-XkU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="create group"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="156" y="395" width="88" height="30"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.66274509800000003" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Wg8-6B-2jj"/>
+                                    <constraint firstAttribute="width" constant="400" id="pub-2B-xeN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="21"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Wg8-6B-2jj"/>
+                                        <exclude reference="pub-2B-xeN"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Wg8-6B-2jj"/>
+                                        <include reference="pub-2B-xeN"/>
+                                    </mask>
                                 </variation>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Clique Name" minimumFontSize="4" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-Hm-wXL">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="pi4-35-ZT4"/>
+                                </constraints>
+                                <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="pi4-35-ZT4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="pi4-35-ZT4"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBZ-W7-aJ3">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="45" y="256" width="310" height="119"/>
+                                    <rect key="frame" x="45" y="178" width="310" height="119"/>
                                 </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34509803921568627" green="0.54509803921568623" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8iX-Hm-wXL" firstAttribute="leading" secondItem="wgW-bM-NFv" secondAttribute="leadingMargin" constant="25" id="3h2-Bx-814"/>
-                            <constraint firstItem="8iX-Hm-wXL" firstAttribute="top" secondItem="BXv-Z0-SsY" secondAttribute="bottom" constant="150" id="e5B-O8-xSV"/>
+                            <constraint firstItem="yAD-Bx-XkU" firstAttribute="centerX" secondItem="wgW-bM-NFv" secondAttribute="centerX" id="DHM-Uy-5Mn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yAD-Bx-XkU" secondAttribute="trailing" constant="-20" id="a37-LY-vGC"/>
+                            <constraint firstItem="8iX-Hm-wXL" firstAttribute="top" secondItem="BXv-Z0-SsY" secondAttribute="bottom" constant="150" id="e5B-O8-xSV">
+                                <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                            </constraint>
+                            <constraint firstItem="yAD-Bx-XkU" firstAttribute="leading" secondItem="wgW-bM-NFv" secondAttribute="leadingMargin" constant="-20" id="nqi-Yj-9Ca"/>
                             <constraint firstItem="8iX-Hm-wXL" firstAttribute="centerX" secondItem="wgW-bM-NFv" secondAttribute="centerX" id="uqs-ae-KAr"/>
+                            <constraint firstItem="jxj-oD-mtw" firstAttribute="top" secondItem="yAD-Bx-XkU" secondAttribute="bottom" id="w06-3P-uES"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8iX-Hm-wXL" secondAttribute="trailing" constant="25" id="xAw-QZ-hjC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="8iX-Hm-wXL"/>
                                 <exclude reference="yAD-Bx-XkU"/>
+                                <exclude reference="8iX-Hm-wXL"/>
                                 <exclude reference="EBZ-W7-aJ3"/>
                             </mask>
                             <mask key="constraints">
@@ -182,12 +217,16 @@
                                 <exclude reference="e5B-O8-xSV"/>
                                 <exclude reference="uqs-ae-KAr"/>
                                 <exclude reference="xAw-QZ-hjC"/>
+                                <exclude reference="DHM-Uy-5Mn"/>
+                                <exclude reference="a37-LY-vGC"/>
+                                <exclude reference="nqi-Yj-9Ca"/>
+                                <exclude reference="w06-3P-uES"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="8iX-Hm-wXL"/>
                                 <include reference="yAD-Bx-XkU"/>
+                                <include reference="8iX-Hm-wXL"/>
                                 <include reference="EBZ-W7-aJ3"/>
                             </mask>
                             <mask key="constraints">
@@ -195,6 +234,10 @@
                                 <include reference="e5B-O8-xSV"/>
                                 <include reference="uqs-ae-KAr"/>
                                 <include reference="xAw-QZ-hjC"/>
+                                <include reference="DHM-Uy-5Mn"/>
+                                <include reference="a37-LY-vGC"/>
+                                <include reference="nqi-Yj-9Ca"/>
+                                <include reference="w06-3P-uES"/>
                             </mask>
                         </variation>
                     </view>
