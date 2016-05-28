@@ -33,8 +33,7 @@
     geocoder = [[CLGeocoder alloc] init];
     [self getCurrentLocation];
     
-    
-    
+    [self.addressLabel setHidden:YES];
     [self.createGroupButton setHidden:YES];
 }
 
@@ -64,7 +63,6 @@
 }
 
 - (void) textFieldDidEndEditing:(UITextField *)textField {
-    NSLog(@"safjkasdf");
     [textField resignFirstResponder];
 }
 
@@ -141,5 +139,26 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)nextButtonPressed:(id)sender {
+    //doesnt work at all
+    [self.mpchandler setGroupName:self.textField.text];
+    NSLog(@"%@", [self.mpchandler getGroupName]);
+    
+    //reverting to segue delegate to handle data forwarding
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([segue.identifier isEqualToString:@"showDetailSegue"]){
+        UITabBarController *tabBarController = (UITabBarController *)segue.destinationViewController;
+        chatViewController *chatController = (chatViewController *)[[tabBarController viewControllers] objectAtIndex:0];
+        chatViewController *connectionsController = (chatViewController*)[[tabBarController viewControllers] objectAtIndex:1];
+        chatController.groupName = self.textField.text;
+        connectionsController.groupName = self.textField.text;
+        NSLog(@"sent the name: %@", self.textField.text);
+    }
+}
+
 
 @end

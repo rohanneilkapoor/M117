@@ -17,11 +17,16 @@
 @property (nonatomic, strong) MCBrowserViewController *browser;
 @property (nonatomic, strong) MCAdvertiserAssistant *advertiser;
 
+@property (nonatomic, strong) NSString *groupName;
 
 - (void)setupPeerWithDisplayName:(NSString *)displayName;
 - (void)setupSession;
 - (void)setupBrowser;
 - (void)advertiseSelf:(BOOL)advertise;
+
+
+- (void) setGroupName:(NSString*)name;
+- (NSString*) getGroupName;
 
 
 @end

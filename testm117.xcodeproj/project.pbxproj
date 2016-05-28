@@ -17,6 +17,8 @@
 		9E6630221CF3CBE2006D0EC8 /* testm117UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630211CF3CBE2006D0EC8 /* testm117UITests.m */; };
 		9E6630341CF4FBC3006D0EC8 /* MPCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630331CF4FBC3006D0EC8 /* MPCHandler.m */; };
 		9E6630511CF55BAA006D0EC8 /* InputGroupNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */; };
+		9EED1B781CF9690400D4AE7C /* chatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EED1B771CF9690400D4AE7C /* chatViewController.m */; };
+		9EED1B7B1CF971BE00D4AE7C /* ConnectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EED1B7A1CF971BE00D4AE7C /* ConnectionsViewController.m */; };
 		FB9007B41CF59B4300F27A94 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007AC1CF59B4300F27A94 /* Montserrat-Black.otf */; };
 		FB9007B51CF59B4300F27A94 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007AC1CF59B4300F27A94 /* Montserrat-Black.otf */; };
 		FB9007B61CF59B4300F27A94 /* Montserrat-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB9007AC1CF59B4300F27A94 /* Montserrat-Black.otf */; };
@@ -84,6 +86,10 @@
 		9E6630331CF4FBC3006D0EC8 /* MPCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCHandler.m; sourceTree = "<group>"; };
 		9E66304F1CF55BAA006D0EC8 /* InputGroupNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputGroupNameViewController.h; sourceTree = "<group>"; };
 		9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputGroupNameViewController.m; sourceTree = "<group>"; };
+		9EED1B761CF9690400D4AE7C /* chatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chatViewController.h; sourceTree = "<group>"; };
+		9EED1B771CF9690400D4AE7C /* chatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chatViewController.m; sourceTree = "<group>"; };
+		9EED1B791CF971BE00D4AE7C /* ConnectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionsViewController.h; sourceTree = "<group>"; };
+		9EED1B7A1CF971BE00D4AE7C /* ConnectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionsViewController.m; sourceTree = "<group>"; };
 		FB9007AC1CF59B4300F27A94 /* Montserrat-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.otf"; sourceTree = "<group>"; };
 		FB9007AD1CF59B4300F27A94 /* Montserrat-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.otf"; sourceTree = "<group>"; };
 		FB9007AE1CF59B4300F27A94 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
@@ -159,6 +165,10 @@
 				9E6630021CF3CBE2006D0EC8 /* ViewController.h */,
 				9E6630031CF3CBE2006D0EC8 /* ViewController.m */,
 				9E6630051CF3CBE2006D0EC8 /* Main.storyboard */,
+				9EED1B791CF971BE00D4AE7C /* ConnectionsViewController.h */,
+				9EED1B7A1CF971BE00D4AE7C /* ConnectionsViewController.m */,
+				9EED1B761CF9690400D4AE7C /* chatViewController.h */,
+				9EED1B771CF9690400D4AE7C /* chatViewController.m */,
 				9E66304F1CF55BAA006D0EC8 /* InputGroupNameViewController.h */,
 				9E6630501CF55BAA006D0EC8 /* InputGroupNameViewController.m */,
 				9E6630081CF3CBE2006D0EC8 /* Assets.xcassets */,
@@ -357,6 +367,8 @@
 			files = (
 				9E6630511CF55BAA006D0EC8 /* InputGroupNameViewController.m in Sources */,
 				9E6630041CF3CBE2006D0EC8 /* ViewController.m in Sources */,
+				9EED1B781CF9690400D4AE7C /* chatViewController.m in Sources */,
+				9EED1B7B1CF971BE00D4AE7C /* ConnectionsViewController.m in Sources */,
 				9E6630341CF4FBC3006D0EC8 /* MPCHandler.m in Sources */,
 				9E6630011CF3CBE2006D0EC8 /* AppDelegate.m in Sources */,
 				9E662FFE1CF3CBE2006D0EC8 /* main.m in Sources */,

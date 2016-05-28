@@ -91,4 +91,16 @@
 }
 
 
+- (void) setGroupName:(NSString*)name {
+    self.groupName = name;
+    NSLog(@"Group name set to: %@", self.groupName);
+    NSLog(@"Group name getter: %@", [self getGroupName]);
+}
+
+- (NSString*) getGroupName {
+    return self.groupName;
+}
+
+
+
 @end
